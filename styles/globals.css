@@ -1,0 +1,84 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #bc7bdc;
+  --primary-light: #e6b5ff;
+  --primary-dark: #7f3da0;
+  --secondary: #888888;
+  --secondary-light: #eeeeee;
+  --seconary-dark: #666666;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+audio.preview,
+video.preview,
+img.preview {
+  width: 100%;
+}
+
+p,
+a,
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.title-ac {
+  color: var(--primary);
+}
+
+.hover-ac {
+  text-decoration: underline 0.25em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+}
+
+.hover-ac:hover {
+  text-decoration-color: var(--primary);
+}
+
+.bg-primary-ac {
+  background-color: var(--primary);
+}
+
+.asset-card {
+  box-sizing: border-box;
+}
+
+.asset-card:hover {
+  box-shadow: 0px 0px 10px var(--primary);
+}
+
+.buy-button {
+  background-color: var(--primary);
+}
+
+.owned-button {
+  background-color: var(--secondary);
+}
+
+button {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+button:hover {
+  opacity: 0.875;
+  transform: scale(1.025);
+}
+
+button:active {
+  opacity: 1;
+  transform: scale(1.0125);
+}
