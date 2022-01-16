@@ -18,11 +18,12 @@ export default function Home() {
   let featuredAsset = assets.find((a) => a.creator === featuredArtist.address);
 
   let newReleases = assets.filter((a) => {
-    const createdAt = new Date(a.createdAt * 1000);
-    const yesterday = new Date(new Date().getTime() - 24 * 60 * 60 * 1000);
-    if (createdAt >= yesterday) return a;
+    // const createdAt = new Date(a.createdAt * 1000);
+    // const yesterday = new Date(new Date().getTime() - 24 * 60 * 60 * 1000);
+    // if (createdAt >= yesterday) return a;
+    return a;
   });
-  newReleases.sort((a, b) => b.createdAt - a.createdAt);
+  // newReleases.sort((a, b) => b.createdAt - a.createdAt);
   newReleases = newReleases.slice(0, 8);
 
   let topCreators = accounts;
